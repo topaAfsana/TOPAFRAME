@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-27T15:10:16 EST" name="All Test Suite" finished-at="2021-01-27T15:10:23 EST" duration-ms="7125">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberRunner.RunCukesTest@209da20d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-01-27T15:10:16 EST" name="Smoke Tests" finished-at="2021-01-27T15:10:23 EST" duration-ms="7125">
+      <class name="CucumberRunner.RunCukesTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:CucumberRunner.RunCukesTest@209da20d]" started-at="2021-01-27T15:10:16 EST" name="setUpClass" finished-at="2021-01-27T15:10:16 EST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp1(java.lang.String)[pri:0, instance:CucumberRunner.RunCukesTest@209da20d]" started-at="2021-01-27T15:10:16 EST" name="setUp1" finished-at="2021-01-27T15:10:21 EST" duration-ms="5357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp1 -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberRunner.RunCukesTest@209da20d]" started-at="2021-01-27T15:10:21 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-27T15:10:21 EST" duration-ms="126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["FB TEST 2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Selenium Cucumber2]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberRunner.RunCukesTest@209da20d]" started-at="2021-01-27T15:10:21 EST" name="tearDownClass" finished-at="2021-01-27T15:10:23 EST" duration-ms="1305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberRunner.RunCukesTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
