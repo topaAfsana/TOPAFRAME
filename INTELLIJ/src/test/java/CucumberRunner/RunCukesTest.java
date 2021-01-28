@@ -30,11 +30,13 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
     @Parameters("url")
     public void setUp1(@Optional("https://www.yahoo.com") String url){
         System.out.println("run before class");
-        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
-        WebDriver driver=new ChromeDriver();
-        driver.get(url);
-        System.out.println(driver.getTitle());
-        driver.quit();
+        System.out.println(url);
+
+//        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
+//        WebDriver driver=new ChromeDriver();
+//        driver.get(url);
+//        System.out.println(driver.getTitle());
+//        driver.quit();
     }
 
 //    @BeforeMethod(alwaysRun = true)

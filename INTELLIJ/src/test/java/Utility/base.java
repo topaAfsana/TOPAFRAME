@@ -10,8 +10,8 @@ public class base {
     @BeforeClass
     public void setUp(){
         System.out.println("run before class");
-//        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/Drivers/chromedriver.exe");
 
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.facebook.com");

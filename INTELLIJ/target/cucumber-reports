@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-28T01:14:25.091Z",
+        "start_timestamp": "2021-01-28T18:34:10.710Z",
         "line": 5,
         "name": "FB TEST 2",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1375000,
+              "duration": 1434000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 215000,
+              "duration": 253000,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 195000,
+              "duration": 220000,
               "status": "passed"
             },
             "line": 8,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 264000,
+              "duration": 295000,
               "status": "passed"
             },
             "line": 9,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 180000,
+              "duration": 224000,
               "status": "passed"
             },
             "line": 10,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 165000,
+              "duration": 251000,
               "status": "passed"
             },
             "line": 11,
