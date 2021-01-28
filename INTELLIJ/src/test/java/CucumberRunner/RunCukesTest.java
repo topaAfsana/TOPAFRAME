@@ -18,7 +18,7 @@ import org.testng.annotations.Parameters;
 @CucumberOptions(
         features = {"src/test/java/Features"},glue= {"Stepdefs"},tags = "@SmokeTest",publish = true,
 //        plugin = { "pretty", "html:target/cucumber-reports" },
-        plugin = { "pretty", "json:cucumber-report.json" },
+        plugin = { "pretty", "json:target/cucumber-report.json" },
         monochrome = true
 )
 
@@ -27,19 +27,32 @@ import org.testng.annotations.Parameters;
 public class RunCukesTest extends AbstractTestNGCucumberTests {
 
     @BeforeClass
-    @Parameters("url")
-    public void setUp1(@Optional("https://www.yahoo.com") String url){
+    @Parameters({"url","platform"})
+    public void setUp1(@Optional("https://www.yahoo.com") String url,@Optional("linux") String platform){
         System.out.println("run before class");
         System.out.println(url);
+        if(platform.equalsIgnoreCase("windows")){
+            String path = System.getProperty("user.dir");
+            System.out.println("MY PATH IS "+path);
+            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver.exe");
+            WebDriver driver=new ChromeDriver();
+            driver.get(url);
+            System.out.println(driver.getTitle());
+            driver.quit();
+        }
+        else if (platform.equalsIgnoreCase("linux")){
+            String path = System.getProperty("user.dir");
+            System.out.println("MY PATH IS "+path);
+            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
+            WebDriver driver=new ChromeDriver();
+            driver.get(url);
+            System.out.println(driver.getTitle());
+            driver.quit();
+        }
 
 //        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
-        String path = System.getProperty("user.dir");
-        System.out.println("MY PATH IS "+path);
-        System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
-        WebDriver driver=new ChromeDriver();
-        driver.get(url);
-        System.out.println(driver.getTitle());
-        driver.quit();
+
+
     }
 
 //    @BeforeMethod(alwaysRun = true)

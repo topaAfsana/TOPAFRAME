@@ -149,6 +149,7 @@
 &lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Smoke Tests&quot; verbose=&quot;2&quot;&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://www.facebook.com&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;linux&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;CucumberRunner.RunCukesTest&quot;/&gt;
     &lt;/classes&gt;
@@ -202,12 +203,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'CucumberRunner.RunCukesTest')
-data.setCell(0, 3, 125);
+data.setCell(0, 3, 136);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 125 ms</span>
+              <span class="suite-total-time">Total running time: 136 ms</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -239,16 +240,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUp1(https://www.facebook.com)</span>
-                <span class="method-start">265 ms</span>
+                <span class="method-name">setUp1(https://www.facebook.com, linux)</span>
+                <span class="method-start">269 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("FB TEST 2", "Optional[Test Selenium Cucumber2]")</span>
-                <span class="method-start">3621 ms</span>
+                <span class="method-start">2792 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">3748 ms</span>
+                <span class="method-start">2930 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,4 +1,0 @@
-# Created at 2021-01-27T14:42:22.924
-
-TestNG by default disables loading DTD from unsecured Urls. If you need to explicitly load the DTD from a http url, please do so by using the JVM argument [-Dtestng.dtd.http=true]
-

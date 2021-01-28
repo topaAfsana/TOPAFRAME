@@ -5,6 +5,7 @@
 <!--        <parameter name = "url" value="https://www.facebook.com"/>-->
 <!--        <parameter name = "url" value="https://www.yahoo.com"/>-->
                 <parameter name = "url" value="${test.url}"/>
+                <parameter name = "platform" value="${test.platform}"/>
         <classes>
             <class name="CucumberRunner.RunCukesTest"></class>
         </classes>
