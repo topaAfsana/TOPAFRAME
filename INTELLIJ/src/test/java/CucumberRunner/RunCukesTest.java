@@ -18,7 +18,7 @@ import org.testng.annotations.Parameters;
 @CucumberOptions(
         features = {"src/test/java/Features"},glue= {"Stepdefs"},tags = "@SmokeTest",publish = true,
 //        plugin = { "pretty", "html:target/cucumber-reports" },
-        plugin = { "pretty", "json:target/cucumber-reports" },
+        plugin = { "pretty", "json:cucumber-report.json" },
         monochrome = true
 )
 
@@ -33,10 +33,13 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
         System.out.println(url);
 
 //        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
-//        WebDriver driver=new ChromeDriver();
-//        driver.get(url);
-//        System.out.println(driver.getTitle());
-//        driver.quit();
+        String path = System.getProperty("user.dir");
+        System.out.println("MY PATH IS "+path);
+        System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
+        WebDriver driver=new ChromeDriver();
+        driver.get(url);
+        System.out.println(driver.getTitle());
+        driver.quit();
     }
 
 //    @BeforeMethod(alwaysRun = true)

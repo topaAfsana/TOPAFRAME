@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-28T19:07:37.783Z",
+        "line": 5,
+        "name": "FB TEST 2",
+        "description": "",
+        "id": "test-selenium-cucumber2;fb-test-2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2906000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Navigate to Facebook",
+            "match": {
+              "location": "Stepdefs.stepDefPage1.user_navigate_to_facebook()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Log In",
+            "match": {
+              "location": "Stepdefs.stepDefPage1.user_log_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 241000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logged in Home page",
+            "match": {
+              "location": "Stepdefs.stepDefPage1.user_logged_in_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 312000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Verify the profile name",
+            "match": {
+              "location": "Stepdefs.stepDefPage2.user_verify_the_profile_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 311000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Log out",
+            "match": {
+              "location": "Stepdefs.stepDefPage2.user_log_out()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 276000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User verify User Logged out",
+            "match": {
+              "location": "Stepdefs.stepDefPage2.user_verify_user_logged_out()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Test Selenium Cucumber2",
+    "description": "",
+    "id": "test-selenium-cucumber2",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/featurePage2.feature",
+    "tags": []
+  }
+]
