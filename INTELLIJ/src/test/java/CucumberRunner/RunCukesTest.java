@@ -32,11 +32,23 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
     public void setUp1(@Optional("https://www.yahoo.com") String url,@Optional("linux") String platform){
         System.out.println("run before class");
         System.out.println(url);
+
+
         if(platform.equalsIgnoreCase("windows")){
             String path = System.getProperty("user.dir");
             System.out.println("MY PATH IS "+path);
             System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver.exe");
-            WebDriver driver=new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+            options.addArguments("window-size=1400,1500");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--no-sandbox");
+            options.addArguments("start-maximized");
+            options.addArguments("enable-automation");
+            options.addArguments("--disable-infobars");
+            options.addArguments("--disable-dev-shm-usage");
+            WebDriver driver = new ChromeDriver(options);
+//            WebDriver driver=new ChromeDriver();
             driver.get(url);
             System.out.println(driver.getTitle());
             driver.quit();
