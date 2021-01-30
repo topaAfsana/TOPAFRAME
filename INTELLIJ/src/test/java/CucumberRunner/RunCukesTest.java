@@ -43,7 +43,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
         }
         else if (platform.equalsIgnoreCase("linux")){
             String path = System.getProperty("user.dir");
-            System.out.println("MY PATH NOT NEEDED FOR LINUX-TOPA "+path);
+            System.out.println("MY PATH NOT NEEDED FOR LINUX-JAFRIN "+path);
             System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.setBinary("/usr/bin/chromedriver");
@@ -52,6 +52,9 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             options.addArguments("--disable-gpu");
             options.addArguments("--disable-infobars");
             options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--remote-debugging-port=9515");
+            options.addArguments("--remote-debugging-port=9222");
+
 //            options.setExperimentalOption("useAutomationExtension", false);
 //            , start-maximized
 
