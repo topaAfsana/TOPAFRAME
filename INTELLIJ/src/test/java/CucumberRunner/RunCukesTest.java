@@ -52,7 +52,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             options.addArguments("--disable-gpu");
             options.addArguments("--disable-infobars");
             options.addArguments("--disable-dev-shm-usage");
-            options.addArguments("--remote-debugging-port=9515");
+//            options.addArguments("--remote-debugging-port=9515");
             options.addArguments("--remote-debugging-port=9222");
 
 //            options.setExperimentalOption("useAutomationExtension", false);
