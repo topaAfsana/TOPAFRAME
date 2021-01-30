@@ -42,11 +42,13 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             driver.quit();
         }
         else if (platform.equalsIgnoreCase("linux")){
+            //        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
             String path = System.getProperty("user.dir");
             System.out.println("MY PATH NOT NEEDED FOR LINUX-Ammu "+path);
+//            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
+
             System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
-
             options.addArguments("--headless");
             options.addArguments("window-size=1400,1500");
             options.addArguments("--disable-gpu");
@@ -55,36 +57,16 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             options.addArguments("enable-automation");
             options.addArguments("--disable-infobars");
             options.addArguments("--disable-dev-shm-usage");
-
-
-
-
-
-//            options.setBinary("/usr/bin/chromedriver");
-//            options.addArguments("--no-sandbox");
-//            options.addArguments("--disable-extensions");
-//            options.addArguments("--disable-gpu");
-//            options.addArguments("--disable-infobars");
-//            options.addArguments("--disable-dev-shm-usage");
-
-//            options.addArguments("--remote-debugging-port=9515");
-//            options.addArguments("--remote-debugging-port=9222");
-
-//            options.setExperimentalOption("useAutomationExtension", false);
-//            , start-maximized
-
-            options.addArguments("--headless");
-
             WebDriver driver = new ChromeDriver(options);
 
-//            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
+
 
             driver.get(url);
             System.out.println(driver.getTitle());
             driver.quit();
         }
 
-//        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
+
 
 
     }
