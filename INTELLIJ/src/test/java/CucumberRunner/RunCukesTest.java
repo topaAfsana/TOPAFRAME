@@ -49,9 +49,10 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             options.setBinary("/usr/bin/chromedriver");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
-            options.setExperimentalOption("useAutomationExtension", false);
+//            options.setExperimentalOption("useAutomationExtension", false);
 
             options.addArguments("--headless");
+
             WebDriver driver = new ChromeDriver(options);
 
 //            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
