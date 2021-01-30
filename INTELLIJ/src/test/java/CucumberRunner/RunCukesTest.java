@@ -48,8 +48,12 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             ChromeOptions options = new ChromeOptions();
             options.setBinary("/usr/bin/chromedriver");
             options.addArguments("--no-sandbox");
+            options.addArguments("--disable-extensions");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--disable-infobars");
             options.addArguments("--disable-dev-shm-usage");
 //            options.setExperimentalOption("useAutomationExtension", false);
+//            , start-maximized
 
             options.addArguments("--headless");
 
