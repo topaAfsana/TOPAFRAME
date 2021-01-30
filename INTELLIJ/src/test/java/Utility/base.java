@@ -36,6 +36,8 @@ public class base {
 //    mvn clean test -Dtestng.dtd.http=true -Dtest.url=https://www.facebook.com -Dtest.platform=linux
 //                    <parameter name = "platform" value="${test.platform}"/>
 
+//    clean test -Dtestng.dtd.http=true -Dtest.url=$URL -Dtest.platform=$PLATFORM
+
 
 
 }

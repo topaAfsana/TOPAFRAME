@@ -42,14 +42,14 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             driver.quit();
         }
         else if (platform.equalsIgnoreCase("linux")){
-
+            System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
             WebDriver driver = new ChromeDriver(options);
             String path = System.getProperty("user.dir");
             System.out.println("MY PATH IS "+path);
 //            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
-            System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+
             driver.get(url);
             System.out.println(driver.getTitle());
             driver.quit();
