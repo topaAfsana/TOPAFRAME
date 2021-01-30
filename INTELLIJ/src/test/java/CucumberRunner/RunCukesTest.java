@@ -43,13 +43,15 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
         }
         else if (platform.equalsIgnoreCase("linux")){
             String path = System.getProperty("user.dir");
-            System.out.println("MY PATH NOT NEEDED FOR LINUX "+path);
+            System.out.println("MY PATH NOT NEEDED FOR LINUX-TOPA "+path);
             System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.setBinary("/usr/bin/chromedriver");
-            options.addArguments("--headless");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
+            options.setExperimentalOption("useAutomationExtension", false);
+
+            options.addArguments("--headless");
             WebDriver driver = new ChromeDriver(options);
 
 //            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
