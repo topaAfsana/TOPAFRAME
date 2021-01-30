@@ -43,15 +43,30 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
         }
         else if (platform.equalsIgnoreCase("linux")){
             String path = System.getProperty("user.dir");
-            System.out.println("MY PATH NOT NEEDED FOR LINUX-tanjim "+path);
+            System.out.println("MY PATH NOT NEEDED FOR LINUX-Ammu "+path);
             System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
-            options.setBinary("/usr/bin/chromedriver");
-            options.addArguments("--no-sandbox");
-            options.addArguments("--disable-extensions");
+
+            options.addArguments("--headless");
+            options.addArguments("window-size=1400,1500");
             options.addArguments("--disable-gpu");
+            options.addArguments("--no-sandbox");
+            options.addArguments("start-maximized");
+            options.addArguments("enable-automation");
             options.addArguments("--disable-infobars");
             options.addArguments("--disable-dev-shm-usage");
+
+
+
+
+
+//            options.setBinary("/usr/bin/chromedriver");
+//            options.addArguments("--no-sandbox");
+//            options.addArguments("--disable-extensions");
+//            options.addArguments("--disable-gpu");
+//            options.addArguments("--disable-infobars");
+//            options.addArguments("--disable-dev-shm-usage");
+
 //            options.addArguments("--remote-debugging-port=9515");
 //            options.addArguments("--remote-debugging-port=9222");
 
