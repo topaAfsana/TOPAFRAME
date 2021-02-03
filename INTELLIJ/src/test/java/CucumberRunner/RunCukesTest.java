@@ -9,10 +9,14 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 @RunWith(Cucumber.class)
@@ -27,9 +31,17 @@ import org.testng.annotations.Parameters;
 
 public class RunCukesTest extends AbstractTestNGCucumberTests {
 
+    public static final String SAUCELAB_USERNAME = "ATSaucelab1";
+    public static final String SAUCELAB_ACCESS_KEY = "f043bd3fbdb94a5695942079c8ea1617";
+    public static final String SAUCELAB_URL = "https://"+SAUCELAB_USERNAME+":"+SAUCELAB_ACCESS_KEY+"@ondemand.saucelabs.com:443/wd/hub";
+
+
+
+
+
     @BeforeClass
     @Parameters({"url","platform"})
-    public void setUp1(@Optional("https://www.yahoo.com") String url,@Optional("linux") String platform){
+    public void setUp1(@Optional("https://www.yahoo.com") String url,@Optional("linux") String platform) throws MalformedURLException {
         System.out.println("run before class");
         System.out.println(url);
 
@@ -50,16 +62,16 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             options.addArguments("--disable-infobars");
             options.addArguments("--disable-dev-shm-usage");
             WebDriver driver = new ChromeDriver(options);
-//            WebDriver driver=new ChromeDriver();
             driver.get(url);
             System.out.println(driver.getTitle());
             driver.quit();
         }
         else if (platform.equalsIgnoreCase("linux")){
             //        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
+            //        System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
+
             String path = System.getProperty("user.dir");
-            System.out.println("MY PATH NOT NEEDED FOR LINUX-Ammu "+path);
-//            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
+            System.out.println("MY PATH NOT NEEDED FOR LINUX-test "+path);
 
             System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
@@ -79,25 +91,33 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             System.out.println(driver.getTitle());
             driver.quit();
         }
+        else if (platform.equalsIgnoreCase("saucelab")){
+//            DesiredCapabilities caps=DesiredCapabilities.chrome();
+            DesiredCapabilities caps=DesiredCapabilities.internetExplorer();
+
+            caps.setCapability("platform","Windows 10");
+//            caps.setCapability("platform","Linux");
+
+            caps.setCapability("version","latest");
+            WebDriver driver=new RemoteWebDriver(new URL(SAUCELAB_URL),caps);
+            driver.get(url);
+            System.out.println(driver.getTitle());
+            driver.quit();
+        }
 
 
+        else if (platform.equalsIgnoreCase("mac")){
+            //        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
+            String path = System.getProperty("user.dir");
+            System.out.println("MY PATH NOT NEEDED FOR MAC-test "+path);
+            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver");
+            WebDriver driver = new ChromeDriver();
+            driver.get(url);
+            System.out.println(driver.getTitle());
+            driver.quit();
+        }
 
 
     }
 
-//    @BeforeMethod(alwaysRun = true)
-//    public void setUp(){
-//        System.out.println("BEFORE METHOD");
-//    }
-
-//    @Test
-//    public void testtt(){
-//        System.out.println("test");
-//
-////        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
-////        WebDriver driver=new ChromeDriver();
-////        driver.get("https://www.facebook.com");
-////        System.out.println(driver.getTitle());
-////        driver.quit();
-//    }
 }
