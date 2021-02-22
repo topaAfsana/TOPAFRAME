@@ -50,7 +50,9 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             String path = System.getProperty("user.dir");
             System.out.println("MY PATH IS metoo"+path);
 //            System.setProperty("webdriver.chrome.driver",path+"/src/test/resource/Drivers/chromedriver.exe");
-            System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+//            System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+
+            System.setProperty("webdriver.chrome.driver","C:\\WebDriver\\chromedriver.exe");
 
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
