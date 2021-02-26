@@ -1,5 +1,10 @@
-CucumberRunner/RunCukesTest.class
-Utility/base.class
-Stepdefs/stepDefPage2.class
-Stepdefs/stepDefPage1.class
-Utility/test3.class
+Qa/Pages/HomePageObj.class
+Qa/Utility/SetUpClass.class
+Qa/Utility/test3.class
+Qa/Stepdefs/stepDefPage2.class
+Qa/Utility/base.class
+Qa/Stepdefs/HomePageStep.class
+Qa/Utility/DriverFactory.class
+Qa/CucumberRunner/RunCukesTest.class
+Qa/Springconfig.class
+Qa/Stepdefs/stepDefPage1.class
