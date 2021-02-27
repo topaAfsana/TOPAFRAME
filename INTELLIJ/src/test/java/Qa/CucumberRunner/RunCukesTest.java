@@ -8,7 +8,7 @@ import Qa.Utility.AppConstants;
 import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 //***************************
-import Qa.Pages.HomePageObj;
+
 import Qa.Utility.DriverFactory;
 import io.cucumber.testng.*;
 import org.openqa.selenium.WebDriver;
@@ -58,13 +58,12 @@ public class RunCukesTest extends AbstractTestNGSpringContextTests{
     @BeforeClass(alwaysRun = true)
     @Parameters({"platform","browser"})
     public void setUp(@Optional("mac") String platform,@Optional("chrome") String browser) throws MalformedURLException {
-        System.out.println("Run before class");
-        appConstants.getURL();
+        System.out.println("**********Run before class***************");
         driver= driverProvider.initLocalDriver(appConstants.URL,platform,browser); }
 
     @AfterClass(alwaysRun = true)
     public void tearDown(){
-        System.out.println("Run after class");
+        System.out.println("**************Run after class**************");
         driver.quit();
     }
 

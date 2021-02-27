@@ -2,9 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Smoke Tests">
-        <!--        <parameter name = "url" value="https://www.facebook.com"/>-->
-        <!--        <parameter name = "platform" value="https://www.facebook.com"/>-->
-<!--        <parameter name = "url" value="${test.url}"/>-->
+
         <parameter name = "platform" value="${test.platform}"/>
         <parameter name = "browser" value="${test.browser}"/>
         <classes>
@@ -15,4 +13,4 @@
 </suite>
 
 
-<!--        mvn clean test -Dtestng.dtd.http=true -Dtest.url=https://topabudgetexplorers.com -Dtest.platform=mac -Dtest.browser=chrome-->
+<!--        mvn clean test -Dtestng.dtd.http=true -Dtest.platform=mac -Dtest.browser=chrome-->

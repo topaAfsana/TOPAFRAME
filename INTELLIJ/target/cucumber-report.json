@@ -1,0 +1,53 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-27T05:44:58.808Z",
+        "line": 8,
+        "name": "Verify Home page",
+        "description": "",
+        "id": "verify-home-page;verify-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40895000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Navigate to Budget Explorers Web page Expense Feature and get Title header",
+            "match": {
+              "location": "Qa.Stepdefs.HomePageStep.user_navigate_to_budget_explorers_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147253000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User go to Expense Page",
+            "match": {
+              "location": "Qa.Stepdefs.HomePageStep.userGetTextOfExpensePage()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WIP"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Home page",
+    "description": "https://topabudgetexplorers.com",
+    "id": "verify-home-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Qa/Features/HomePage.feature",
+    "tags": []
+  }
+]
