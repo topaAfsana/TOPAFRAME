@@ -1,6 +1,7 @@
 package Qa.Pages;
 
 import Qa.CucumberRunner.RunCukesTest;
+import Qa.Utility.driverUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,50 +13,26 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 
-public class HomePageObj {
-WebDriver driver;
+public class HomePageObj{
+    //*********PAGE CONFIG**************
+    private WebDriver driver;
     public HomePageObj(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
-        }
+        PageFactory.initElements(driver,this);}
 
-
-//    public  WebElement locateElement(WebDriver driver,String locator){
-//        WebElement element=driver.findElement(By.id(""+locator+""));
-//        return element;
-//    }
-
-
-//    public WebElement titleheader=locateElement(driver,"tittleheader");
-//    public WebElement attriubute=locateElement("expense");
+    //*********PAGE ELEMENTS**************
+    @FindBy(how=How.ID,using="expense']") WebElement expenseAttribute;
+    @FindBy(id="tittleheader") WebElement tittleHeader;
+    @FindBy(how=How.XPATH,using=".//*[@id='u_0_n']") WebElement LogInButton;
 
 
 
-
-
-
-    @FindBy(how=How.ID,using="expense']")
-    public static WebElement expenseAttribute;
-
-    @FindBy(id="tittleheader")
-    public static WebElement tittleHeader;
-
-    @FindBy(how=How.XPATH,using=".//*[@id='u_0_n']")
-    WebElement LogInButton;
-
-
-
-
-
+    //*********PAGE METHODS**************
     public void getExpenseAttriubute(){
         System.out.println(driver.getPageSource());
         String attribute=expenseAttribute.getAttribute("id");
-        System.out.println(attribute);
-    }
-
+        System.out.println(attribute); }
 
     public void getTittleHeader(){
-//       WebElement titleheader= driver.findElement(By.id("tittleheader"));
-
-System.out.println(tittleHeader.getText());    }
+    driverUtil.getText(tittleHeader);}
 }

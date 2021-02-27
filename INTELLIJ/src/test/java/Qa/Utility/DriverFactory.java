@@ -5,8 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -14,6 +14,8 @@ import java.net.URL;
 @Component
 public class DriverFactory {
      private WebDriver driver;
+     @Autowired
+     AppConstants appConstants;
 
     private static final String SAUCELAB_USERNAME = "ATSaucelab1";
     private static final String SAUCELAB_ACCESS_KEY = "f043bd3fbdb94a5695942079c8ea1617";
@@ -104,6 +106,7 @@ public class DriverFactory {
 
 
             if(browser.equalsIgnoreCase("chrome")){
+                appConstants.getURL();
                 //        System.setProperty("webdriver.chrome.driver", "/Users/abraartishan/Downloads/chromedriver");
                 String path = System.getProperty("user.dir");
                 System.out.println("MY PATH NOT NEEDED FOR DRIVER FACTORY MAC-test "+path);

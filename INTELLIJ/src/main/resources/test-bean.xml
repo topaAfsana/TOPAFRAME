@@ -8,6 +8,7 @@
     http://www.springframework.org/schema/context/spring-context-3.2.xsd">
     <context:annotation-config/>
     <context:component-scan base-package="Qa" />
+    <context:property-placeholder location="App.properties"/>
 
     <bean id="rt" class="Qa.CucumberRunner.RunCukesTest"></bean>
     <!--    <bean id='testbean' class="qa.Test">-->

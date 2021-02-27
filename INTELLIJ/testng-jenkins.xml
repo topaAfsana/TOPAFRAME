@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true" name="Smoke Tests">
         <!--        <parameter name = "url" value="https://www.facebook.com"/>-->
         <!--        <parameter name = "platform" value="https://www.facebook.com"/>-->
-        <parameter name = "url" value="${test.url}"/>
+<!--        <parameter name = "url" value="${test.url}"/>-->
         <parameter name = "platform" value="${test.platform}"/>
         <parameter name = "browser" value="${test.browser}"/>
         <classes>

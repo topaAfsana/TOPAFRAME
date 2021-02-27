@@ -4,7 +4,7 @@ Feature: Verify Home page
 https://topabudgetexplorers.com
 
 
-  @webtest
+  @WIP
   Scenario: Verify Home page
-    Given User Navigate to Budget Explorers Web page Expense Feature
-    When User Get Text of Expense Page
+    Given User Navigate to Budget Explorers Web page Expense Feature and get Title header
+    When User go to Expense Page

@@ -2,7 +2,9 @@ package Qa.CucumberRunner;
 //old version cucumber
 // import cucumber.api.CucumberOptions;
 //import cucumber.api.junit.Cucumber;
+//@RunWith(Cucumber.class)
 //works without AbstractTestngcucumber
+import Qa.Utility.AppConstants;
 import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 //***************************
@@ -18,10 +20,10 @@ import java.net.MalformedURLException;
 
 
 
-//@RunWith(Cucumber.class)
+
 @CucumberOptions(
 //        features = {"src/test/java/Qa/Features"},glue= {"Qa/Stepdefs"},tags = "@SmokeTest",publish = true,
-        features = {"src/test/java/Qa/Features"},glue= {"Qa/Stepdefs"},tags = "@webtest",publish = true,
+        features = {"src/test/java/Qa/Features"},glue= {"Qa/Stepdefs"},tags = "@WIP",publish = true,
 //        plugin = { "pretty", "html:target/cucumber-reports" },
         plugin = { "pretty", "json:target/cucumber-report.json" },
         monochrome = true
@@ -31,7 +33,7 @@ import java.net.MalformedURLException;
 @ContextConfiguration(locations = {"classpath:test-bean.xml"})
 public class RunCukesTest extends AbstractTestNGSpringContextTests{
 
-    //************************************AbstractTestNGCucumberTests************************************
+    //************************************INITIALIZE TESTNG CUCUMBER RUNNER-AbstractTestNGCucumberTests************************************
     private TestNGCucumberRunner testNGCucumberRunner;
     @BeforeClass(alwaysRun = true)
     public void setUpClass() {
@@ -45,16 +47,20 @@ public class RunCukesTest extends AbstractTestNGSpringContextTests{
     public void tearDownClass() { if (testNGCucumberRunner == null) {return; }testNGCucumberRunner.finish();}
 
 
-    //************************************SET UP BEGIN************************************
+    //************************************DRIVER INITIALIZATION BEGIN BEGIN************************************
      public static WebDriver driver;
      @Autowired
      DriverFactory driverProvider;
+     @Autowired
+     public AppConstants appConstants;
 
+     //*********************************DRIVER ENVIRONMENT SETUP BEGIN**********************************
     @BeforeClass(alwaysRun = true)
-    @Parameters({"url","platform","browser"})
-    public void setUp(@Optional("https://www.yahoo.com") String url, @Optional("mac") String platform,String browser) throws MalformedURLException {
+    @Parameters({"platform","browser"})
+    public void setUp(@Optional("mac") String platform,@Optional("chrome") String browser) throws MalformedURLException {
         System.out.println("Run before class");
-        driver= driverProvider.initLocalDriver(url,platform,browser); }
+        appConstants.getURL();
+        driver= driverProvider.initLocalDriver(appConstants.URL,platform,browser); }
 
     @AfterClass(alwaysRun = true)
     public void tearDown(){
@@ -63,10 +69,6 @@ public class RunCukesTest extends AbstractTestNGSpringContextTests{
     }
 
 
-    //************************************PAGE OBJECTS************************************
-
-
-        protected HomePageObj homePageObj=new HomePageObj(driver);
 
 
 
