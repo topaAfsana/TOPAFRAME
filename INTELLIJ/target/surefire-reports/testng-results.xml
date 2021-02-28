@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-28T17:16:04 EST" name="All Test Suite" finished-at="2021-02-28T17:16:39 EST" duration-ms="35389">
+  <suite started-at="2021-02-28T17:24:57 EST" name="All Test Suite" finished-at="2021-02-28T17:25:14 EST" duration-ms="16941">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" name="runScenario" class="Qa.CucumberRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-02-28T17:16:04 EST" name="Smoke Tests" finished-at="2021-02-28T17:16:39 EST" duration-ms="35389">
+    <test started-at="2021-02-28T17:24:57 EST" name="Smoke Tests" finished-at="2021-02-28T17:25:14 EST" duration-ms="16941">
       <class name="Qa.CucumberRunner.TestRunner">
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:04 EST" name="springTestContextBeforeTestClass" finished-at="2021-02-28T17:16:04 EST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:24:57 EST" name="springTestContextBeforeTestClass" finished-at="2021-02-28T17:24:57 EST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:04 EST" name="springTestContextPrepareTestInstance" finished-at="2021-02-28T17:16:04 EST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:24:57 EST" name="springTestContextPrepareTestInstance" finished-at="2021-02-28T17:24:58 EST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:04 EST" name="setUpClass" finished-at="2021-02-28T17:16:04 EST" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:24:58 EST" name="setUpClass" finished-at="2021-02-28T17:24:58 EST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:04 EST" name="springTestContextBeforeTestMethod" finished-at="2021-02-28T17:16:04 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:24:58 EST" name="springTestContextBeforeTestMethod" finished-at="2021-02-28T17:24:58 EST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:04 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-28T17:16:15 EST" duration-ms="10375" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:24:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-28T17:25:02 EST" duration-ms="4215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:15 EST" name="springTestContextAfterTestMethod" finished-at="2021-02-28T17:16:15 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:25:02 EST" name="springTestContextAfterTestMethod" finished-at="2021-02-28T17:25:02 EST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:15 EST" name="springTestContextBeforeTestMethod" finished-at="2021-02-28T17:16:15 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:25:02 EST" name="springTestContextBeforeTestMethod" finished-at="2021-02-28T17:25:02 EST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +71,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:15 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-28T17:16:37 EST" duration-ms="22035" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:25:02 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-28T17:25:12 EST" duration-ms="10038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,11 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:37 EST" name="tearDownClass" finished-at="2021-02-28T17:16:39 EST" duration-ms="2319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:37 EST" name="springTestContextAfterTestMethod" finished-at="2021-02-28T17:16:37 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:25:12 EST" name="springTestContextAfterTestMethod" finished-at="2021-02-28T17:25:12 EST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +98,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:16:39 EST" name="springTestContextAfterTestClass" finished-at="2021-02-28T17:16:39 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:25:12 EST" name="tearDownClass" finished-at="2021-02-28T17:25:14 EST" duration-ms="2056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-02-28T17:25:14 EST" name="springTestContextAfterTestClass" finished-at="2021-02-28T17:25:14 EST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->
