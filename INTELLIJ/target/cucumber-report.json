@@ -3,51 +3,187 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-27T05:44:58.808Z",
-        "line": 8,
-        "name": "Verify Home page",
+        "start_timestamp": "2021-02-28T22:01:20.259Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1840954000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Qa.Stepdefs.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User able to create new expense list",
         "description": "",
-        "id": "verify-home-page;verify-home-page",
+        "id": "user-is-able-to-perform-expoense-functionality;user-able-to-create-new-expense-list",
+        "after": [
+          {
+            "result": {
+              "duration": 84833000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Qa.Stepdefs.Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 40895000,
+              "duration": 18427000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User Navigate to Budget Explorers Web page Expense Feature and get Title header",
+            "line": 6,
+            "name": "User is on BudgetExplorer Home Page",
             "match": {
-              "location": "Qa.Stepdefs.HomePageStep.user_navigate_to_budget_explorers_web_page()"
+              "location": "Qa.Stepdefs.Home.HomePageStep.user_is_on_budget_explorer_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 147253000,
+              "duration": 5253007000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User go to Expense Page",
+            "line": 7,
+            "name": "User got to Expense page",
             "match": {
-              "location": "Qa.Stepdefs.HomePageStep.userGetTextOfExpensePage()"
+              "location": "Qa.Stepdefs.Home.HomePageStep.user_got_to_expense_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@WIP"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-28T22:01:27.489Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1339138000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Qa.Stepdefs.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User able to view all the Expense List",
+        "description": "",
+        "id": "user-is-able-to-perform-expoense-functionality;user-able-to-view-all-the-expense-list",
+        "after": [
+          {
+            "result": {
+              "duration": 86356000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Qa.Stepdefs.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 328000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is on BudgetExplorer Home Page",
+            "match": {
+              "location": "Qa.Stepdefs.Home.HomePageStep.user_is_on_budget_explorer_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5215343000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User got to Expense page",
+            "match": {
+              "location": "Qa.Stepdefs.Home.HomePageStep.user_got_to_expense_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5216565000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Log In with valid User \"Topa\" and valid password \"tishan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Topa\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"tishan\"",
+                  "offset": 54
+                }
+              ],
+              "location": "Qa.Stepdefs.Expense.ExpensePageSteps.user_log_in_with_valid_user_and_valid_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5010186000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User able to log in and land on Expense page",
+            "match": {
+              "location": "Qa.Stepdefs.Expense.ExpensePageSteps.user_able_to_log_in_and_land_on_expense_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5048781000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User open list table",
+            "match": {
+              "location": "Qa.Stepdefs.Expense.ExpensePageSteps.user_open_list_table()"
             },
             "keyword": "When "
           }
         ],
         "tags": [
           {
+            "name": "@RegressionTest"
+          },
+          {
             "name": "@WIP"
           }
         ]
       }
     ],
-    "name": "Verify Home page",
-    "description": "https://topabudgetexplorers.com",
-    "id": "verify-home-page",
+    "name": "User is able to perform Expoense functionality",
+    "description": "",
+    "id": "user-is-able-to-perform-expoense-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/java/Qa/Features/HomePage.feature",
+    "uri": "file:src/main/java/Qa/Features/Expense/Expense.feature",
     "tags": []
   }
 ]

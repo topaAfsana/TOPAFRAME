@@ -1,44 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-27T00:44:56 EST" name="All Test Suite" finished-at="2021-02-27T00:45:00 EST" duration-ms="4243">
+  <suite started-at="2021-02-28T17:01:19 EST" name="All Test Suite" finished-at="2021-02-28T17:01:51 EST" duration-ms="31623">
     <groups>
       <group name="cucumber">
-        <method signature="RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" name="runScenario" class="Qa.CucumberRunner.RunCukesTest"/>
+        <method signature="RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" name="runScenario" class="Qa.CucumberRunner.RunCukesTest"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-02-27T00:44:56 EST" name="Smoke Tests" finished-at="2021-02-27T00:45:00 EST" duration-ms="4243">
+    <test started-at="2021-02-28T17:01:19 EST" name="Smoke Tests" finished-at="2021-02-28T17:01:51 EST" duration-ms="31623">
       <class name="Qa.CucumberRunner.RunCukesTest">
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:56 EST" name="springTestContextBeforeTestClass" finished-at="2021-02-27T00:44:56 EST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:19 EST" name="springTestContextBeforeTestClass" finished-at="2021-02-28T17:01:19 EST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:56 EST" name="springTestContextPrepareTestInstance" finished-at="2021-02-27T00:44:56 EST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:19 EST" name="springTestContextPrepareTestInstance" finished-at="2021-02-28T17:01:19 EST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:56 EST" name="setUp" finished-at="2021-02-27T00:44:58 EST" duration-ms="1611" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mac]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:58 EST" name="setUpClass" finished-at="2021-02-27T00:44:58 EST" duration-ms="403" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:19 EST" name="setUpClass" finished-at="2021-02-28T17:01:20 EST" duration-ms="311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:58 EST" name="springTestContextBeforeTestMethod" finished-at="2021-02-27T00:44:58 EST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:20 EST" name="springTestContextBeforeTestMethod" finished-at="2021-02-28T17:01:20 EST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,23 +33,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-27T00:44:59 EST" duration-ms="282" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-28T17:01:27 EST" duration-ms="7292" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Home page"]]>
+                <![CDATA["User able to create new expense list"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Verify Home page]"]]>
+                <![CDATA["Optional[User is able to perform Expoense functionality]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:59 EST" name="springTestContextAfterTestMethod" finished-at="2021-02-27T00:44:59 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:27 EST" name="springTestContextAfterTestMethod" finished-at="2021-02-28T17:01:27 EST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,15 +60,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:59 EST" name="tearDown" finished-at="2021-02-27T00:44:59 EST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:27 EST" name="springTestContextBeforeTestMethod" finished-at="2021-02-28T17:01:27 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Qa.CucumberRunner.RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:44:59 EST" name="tearDownClass" finished-at="2021-02-27T00:45:00 EST" duration-ms="1529" status="PASS">
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:27 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-28T17:01:49 EST" duration-ms="21937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User able to view all the Expense List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User is able to perform Expoense functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:49 EST" name="springTestContextAfterTestMethod" finished-at="2021-02-28T17:01:49 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Qa.CucumberRunner.RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:49 EST" name="tearDownClass" finished-at="2021-02-28T17:01:51 EST" duration-ms="1751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@3b5fad2d]" started-at="2021-02-27T00:45:00 EST" name="springTestContextAfterTestClass" finished-at="2021-02-27T00:45:00 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:Qa.CucumberRunner.RunCukesTest@19976a65]" started-at="2021-02-28T17:01:51 EST" name="springTestContextAfterTestClass" finished-at="2021-02-28T17:01:51 EST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->

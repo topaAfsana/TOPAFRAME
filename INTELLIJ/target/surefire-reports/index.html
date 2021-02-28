@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Qa.CucumberRunner.RunCukesTest" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Home page&quot;, &quot;Optional[Verify Home page]&quot;)">runScenario("Verify Home page", "Optional[Verify Home page]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Qa.CucumberRunner.RunCukesTest" class="method navigator-link" hash-for-method="runScenario(&quot;User able to create new expense list&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Qa.CucumberRunner.RunCukesTest" class="method navigator-link" hash-for-method="runScenario(&quot;User able to view all the Expense List&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">runScenario("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -127,10 +132,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify Home page&quot;, &quot;Optional[Verify Home page]&quot;)">
-                  </a> <!-- runScenario("Verify Home page", "Optional[Verify Home page]") -->
+                  <a name="runScenario(&quot;User able to create new expense list&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">
+                  </a> <!-- runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Home page", "Optional[Verify Home page]")</span>
+                  <span class="parameters">("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User able to view all the Expense List&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">
+                  </a> <!-- runScenario("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -147,7 +162,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Smoke Tests&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Smoke Tests&quot; verbose=&quot;2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;platform&quot; value=&quot;mac&quot;/&gt;
     &lt;classes&gt;
@@ -199,16 +214,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Qa.CucumberRunner.RunCukesTest')
-data.setCell(0, 3, 282);
+data.setCell(0, 3, 21937);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'Qa.CucumberRunner.RunCukesTest')
+data.setCell(1, 3, 7292);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 282 ms</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -244,36 +263,40 @@ return data;
                 <span class="method-start">8 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(mac, chrome)</span>
-                <span class="method-start">310 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">1921 ms</span>
+                <span class="method-start">305 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void Qa.CucumberRunner.RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber....)</span>
-                <span class="method-start">2330 ms</span>
+                <span class="method-start">623 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify Home page", "Optional[Verify Home page]")</span>
-                <span class="method-start">2332 ms</span>
+                <span class="method-name">runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</span>
+                <span class="method-start">625 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void Qa.CucumberRunner.RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber....)</span>
-                <span class="method-start">2616 ms</span>
+                <span class="method-start">7918 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void Qa.CucumberRunner.RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber....)</span>
+                <span class="method-start">7919 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]")</span>
+                <span class="method-start">7920 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void Qa.CucumberRunner.RunCukesTest.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber....)</span>
+                <span class="method-start">29857 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">2617 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">2698 ms</span>
+                <span class="method-start">29858 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">4228 ms</span>
+                <span class="method-start">31609 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -83,10 +83,12 @@
             <artifactId>extentreports</artifactId>
             <version>2.41.2</version>
         </dependency>
-
-
-
-
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.3.0</version>
+            <scope>compile</scope>
+        </dependency>
 
 
     </dependencies>

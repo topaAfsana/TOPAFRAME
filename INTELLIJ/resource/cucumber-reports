@@ -19,7 +19,7 @@
             "line": 6,
             "name": "User Navigate to Facebook",
             "match": {
-              "location": "Qa.Stepdefs.stepDefPage1.user_navigate_to_facebook()"
+              "location": "Qa.Stepdefs.Home.stepDefPage1.user_navigate_to_facebook()"
             },
             "keyword": "Given "
           },
@@ -31,7 +31,7 @@
             "line": 7,
             "name": "User Log In",
             "match": {
-              "location": "Qa.Stepdefs.stepDefPage1.user_log_in()"
+              "location": "Qa.Stepdefs.Home.stepDefPage1.user_log_in()"
             },
             "keyword": "When "
           },
@@ -43,7 +43,7 @@
             "line": 8,
             "name": "User logged in Home page",
             "match": {
-              "location": "Qa.Stepdefs.stepDefPage1.user_logged_in_home_page()"
+              "location": "Qa.Stepdefs.Home.stepDefPage1.user_logged_in_home_page()"
             },
             "keyword": "Then "
           },
@@ -55,7 +55,7 @@
             "line": 9,
             "name": "User Verify the profile name",
             "match": {
-              "location": "Qa.Stepdefs.stepDefPage2.user_verify_the_profile_name()"
+              "location": "Qa.Stepdefs.Home.stepDefPage2.user_verify_the_profile_name()"
             },
             "keyword": "And "
           },
@@ -67,7 +67,7 @@
             "line": 10,
             "name": "User Log out",
             "match": {
-              "location": "Qa.Stepdefs.stepDefPage2.user_log_out()"
+              "location": "Qa.Stepdefs.Home.stepDefPage2.user_log_out()"
             },
             "keyword": "When "
           },
@@ -79,7 +79,7 @@
             "line": 11,
             "name": "User verify User Logged out",
             "match": {
-              "location": "Qa.Stepdefs.stepDefPage2.user_verify_user_logged_out()"
+              "location": "Qa.Stepdefs.Home.stepDefPage2.user_verify_user_logged_out()"
             },
             "keyword": "Then "
           }
