@@ -1,8 +1,8 @@
 package Qa.Pages;
 
-import Qa.Utility.driverUtil;
+import Qa.Utility.DriverUtil;
 
-public class OnWebUI extends driverUtil {
+public class OnWebUI extends DriverUtil {
 
     public static void waitFor(){
         try{ Thread.sleep(5000); } catch (Exception e){ e.getMessage(); } }

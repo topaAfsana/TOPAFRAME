@@ -10,6 +10,6 @@
     <context:component-scan base-package="Qa" />
     <context:property-placeholder location="App.properties"/>
 
-    <bean id="rt" class="Qa.CucumberRunner.RunCukesTest"></bean>
+    <bean id="rt" class="Qa.CucumberRunner.TestRunner"></bean>
     <!--    <bean id='testbean' class="qa.Test">-->
 </beans>
