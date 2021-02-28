@@ -1,6 +1,6 @@
 package Qa.Pages;
 
-import Qa.Utility.driverUtil;
+import Qa.Utility.DriverUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,15 +29,15 @@ public class ExpensePageObj {
 
     //*********PAGE METHODS**************
     public void Log_In_With(String user, String password) {
-        driverUtil.enterIn(userField, user);
-        driverUtil.enterIn(passField, password);
-        driverUtil.click(logInBtn);
+        DriverUtil.enterIn(userField, user);
+        DriverUtil.enterIn(passField, password);
+        DriverUtil.click(logInBtn);
     }
     public void  Open_Lists_Table(){
-        driverUtil.click(listsTableBtn);
+        DriverUtil.click(listsTableBtn);
     }
     public String  Get_Lists_Table_Header(){
-       return  driverUtil.getText(listsTableHeader);
+       return  DriverUtil.getText(listsTableHeader);
     }
 
 

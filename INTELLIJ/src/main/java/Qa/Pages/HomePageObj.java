@@ -1,16 +1,11 @@
 package Qa.Pages;
 
-import Qa.CucumberRunner.RunCukesTest;
-import Qa.Utility.driverUtil;
-import org.openqa.selenium.By;
+import Qa.Utility.DriverUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 
 public class HomePageObj{
@@ -31,7 +26,7 @@ public class HomePageObj{
 
 
     public void Go_to_Expense_feature(){
-    driverUtil.click(expense_button);
+    DriverUtil.click(expense_button);
     }
     public void getExpenseAttriubute(){
         String attribute=expense_button.getAttribute("id");
@@ -40,5 +35,5 @@ public class HomePageObj{
 
 
     public void getTittleHeader(){
-    driverUtil.getText(tittleHeader);}
+    DriverUtil.getText(tittleHeader);}
 }
