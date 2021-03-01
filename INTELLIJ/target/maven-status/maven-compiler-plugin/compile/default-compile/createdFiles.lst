@@ -10,6 +10,7 @@ Qa/Pages/ExpensePageObj.class
 Qa/Stepdefs/Home/stepDefPage1.class
 Qa/Pages/OnWebUI.class
 Qa/Stepdefs/Hook.class
+Qa/Utility/ScreenshotFactory.class
 Qa/Pages/HomePageObj.class
 Qa/Utility/base.class
 Qa/Utility/DriverFactory.class

@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.653 s - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 30.332 s <<< FAILURE! - in TestSuite
+Qa.CucumberRunner.RunCukesTest.runScenario  Time elapsed: 13.051 s  <<< FAILURE!
+java.lang.AssertionError: expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]
+
+Qa.CucumberRunner.RunCukesTest.runScenario  Time elapsed: 12.554 s  <<< FAILURE!
+java.lang.AssertionError: expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]
+

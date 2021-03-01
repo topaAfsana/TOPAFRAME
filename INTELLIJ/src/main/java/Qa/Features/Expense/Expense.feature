@@ -5,8 +5,8 @@ Feature: User is able to perform Expoense functionality
   Scenario: User able to create new expense list
     Given User is on BudgetExplorer Home Page
     And   User got to Expense page
-#    When User Log In with valid User "Topa" and valid password "tishan"
-#    And User able to log in and land on Expense page
+    When User Log In with valid User "Topa" and valid password "tishan"
+    And User able to log in and land on Expense page
 
 
   @RegressionTest @WIP

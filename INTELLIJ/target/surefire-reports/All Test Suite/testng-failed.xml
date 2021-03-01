@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="methods" name="Smoke Tests(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="mac"/>
+    <classes>
+      <class name="Qa.CucumberRunner.RunCukesTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="setUpClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="tearDownClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- Qa.CucumberRunner.RunCukesTest -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

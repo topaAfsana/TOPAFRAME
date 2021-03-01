@@ -20,9 +20,9 @@ public class ExpensePageSteps {
 
     @When("User able to log in and land on Expense page")
     public void user_able_to_log_in_and_land_on_expense_page() {
-        String expected="BUDGET EXPLORER-EXPENSE CHECK";
+        String expected="BUDGET EXPLORER-EXPENSE CHECK1";
         String actual= driverUtil.getPageTitle();
-        Verify.It_matches("Page title matched ",expected,actual);
+        Verify.It_matches("Page title",expected,actual);
         OnWebUI.waitFor();
     }
 

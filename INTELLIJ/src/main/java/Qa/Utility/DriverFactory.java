@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 @Component
 public class DriverFactory {
@@ -122,6 +123,8 @@ public class DriverFactory {
             }
 
         }
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         return driver;
 
     }

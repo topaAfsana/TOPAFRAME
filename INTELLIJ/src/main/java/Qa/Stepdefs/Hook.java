@@ -2,8 +2,12 @@ package Qa.Stepdefs;
 
 import Qa.Utility.AppConstants;
 import Qa.Utility.DriverFactory;
+import Qa.Utility.ScreenshotFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
@@ -24,10 +28,26 @@ public class Hook{
         driver= driverProvider.initLocalDriver(appConstants.getURL(),platform,browser);
     }
 
+//    @After
+//    public void tearDown(Scenario scenario) throws InterruptedException {
+//        if(scenario.isFailed()){
+//            System.out.println("**************Screenshot method**************");
+//            ScreenshotFactory.captureScreenShot(driver,scenario.getName());
+//        }
+//        System.out.println("**************Run after hook**************");
+//        driver.quit();
+//    }
+
+
     @After
-    public void tearDown() throws InterruptedException {
+    public void tearDown(Scenario scenario) throws InterruptedException {
+        if(scenario.isFailed()){
+            System.out.println("**************Screenshot method**************");
+          ScreenshotFactory.CaptureAndEmbedScreenshot(driver,scenario);
+        }
         System.out.println("**************Run after hook**************");
         driver.quit();
     }
+
 
 }
