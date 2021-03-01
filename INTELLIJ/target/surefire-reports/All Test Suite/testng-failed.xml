@@ -5,18 +5,18 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="platform" value="mac"/>
     <classes>
-      <class name="Qa.CucumberRunner.RunCukesTest">
+      <class name="Qa.CucumberRunner.TestRunner">
         <methods>
           <include name="springTestContextBeforeTestClass"/>
-          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
           <include name="setUpClass"/>
           <include name="springTestContextPrepareTestInstance"/>
           <include name="springTestContextAfterTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
-          <include name="tearDownClass"/>
           <include name="springTestContextAfterTestMethod"/>
         </methods>
-      </class> <!-- Qa.CucumberRunner.RunCukesTest -->
+      </class> <!-- Qa.CucumberRunner.TestRunner -->
     </classes>
   </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
