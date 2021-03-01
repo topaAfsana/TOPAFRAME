@@ -1,7 +1,7 @@
 Feature: User is able to perform Expoense functionality
 
 
-  @RegressionTest @WIP
+  @RegressionTest
   Scenario: User able to create new expense list
     Given User is on BudgetExplorer Home Page
     And   User got to Expense page
