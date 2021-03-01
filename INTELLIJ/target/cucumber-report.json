@@ -3,11 +3,19 @@
     "line": 1,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2021-03-01T20:43:13.855Z",
         "before": [
           {
             "result": {
               "duration": 1799975000,
+=======
+        "start_timestamp": "2021-02-28T22:24:58.543Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1779706000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "match": {
@@ -29,7 +37,11 @@
               }
             ],
             "result": {
+<<<<<<< HEAD
               "duration": 689689000,
+=======
+              "duration": 79559000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "match": {
@@ -42,7 +54,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 16861000,
+=======
+              "duration": 15305000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "line": 6,
@@ -54,7 +70,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5198904000,
+=======
+              "duration": 2243572000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "line": 7,
@@ -110,11 +130,19 @@
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2021-03-01T20:43:26.836Z",
         "before": [
           {
             "result": {
               "duration": 1468614000,
+=======
+        "start_timestamp": "2021-02-28T22:25:02.700Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1434408000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "match": {
@@ -136,7 +164,11 @@
               }
             ],
             "result": {
+<<<<<<< HEAD
               "duration": 683010000,
+=======
+              "duration": 86164000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "match": {
@@ -149,7 +181,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1188000,
+=======
+              "duration": 306000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "line": 14,
@@ -161,7 +197,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5172011000,
+=======
+              "duration": 2223038000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "line": 15,
@@ -173,7 +213,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5206996000,
+=======
+              "duration": 2216173000,
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
               "status": "passed"
             },
             "line": 16,
@@ -195,9 +239,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "java.lang.AssertionError: expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:629)\n\tat org.testng.Assert.assertEquals(Assert.java:639)\n\tat Qa.Utility.Verify.It_matches(Verify.java:8)\n\tat Qa.Stepdefs.Expense.ExpensePageSteps.user_able_to_log_in_and_land_on_expense_page(ExpensePageSteps.java:25)\n\tat ✽.User able to log in and land on Expense page(file:///Users/abraartishan/Desktop/TOPA_QA/CODE%20BASE/CUCUMBER_FRAME/INTELLIJ/src/main/java/Qa/Features/Expense/Expense.feature:17)\n",
               "duration": 5959000,
               "status": "failed"
+=======
+              "duration": 2009307000,
+              "status": "passed"
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
             },
             "line": 17,
             "name": "User able to log in and land on Expense page",
@@ -208,8 +257,13 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 218000,
               "status": "skipped"
+=======
+              "duration": 2045102000,
+              "status": "passed"
+>>>>>>> 68d0859a25d390ff7560bc5fd0b5ad00d589343e
             },
             "line": 18,
             "name": "User open list table",

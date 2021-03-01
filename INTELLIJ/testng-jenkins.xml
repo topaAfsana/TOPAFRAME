@@ -6,7 +6,7 @@
         <parameter name = "platform" value="${test.platform}"/>
         <parameter name = "browser" value="${test.browser}"/>
         <classes>
-            <class name="Qa.CucumberRunner.RunCukesTest"></class>
+            <class name="Qa.CucumberRunner.TestRunner"></class>
         </classes>
 
     </test>
