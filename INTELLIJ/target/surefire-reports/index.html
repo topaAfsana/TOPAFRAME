@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,24 +104,15 @@
                     <div class="method-list-content failed suite-All_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Qa.CucumberRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User able to create new expense list&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="Qa.CucumberRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User able to view all the Expense List&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">runScenario("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-All_Test_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
-                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-All_Test_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Qa.CucumberRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User able to create new expense list&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,20 +132,132 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;User able to create new expense list&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">
+                  </a> <!-- runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;Mds-MacBook-Pro.local&apos;, ip: &apos;2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;12.0.1&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000109591909 chromedriver + 2533641
+1   chromedriver                        0x0000000109c1bd53 chromedriver + 9391443
+2   chromedriver                        0x000000010934f3c3 chromedriver + 164803
+3   chromedriver                        0x0000000109373566 chromedriver + 312678
+4   chromedriver                        0x000000010936f774 chromedriver + 296820
+5   chromedriver                        0x000000010936c9a5 chromedriver + 285093
+6   chromedriver                        0x000000010939f834 chromedriver + 493620
+7   chromedriver                        0x000000010939ab43 chromedriver + 473923
+8   chromedriver                        0x0000000109375616 chromedriver + 321046
+9   chromedriver                        0x0000000109376587 chromedriver + 324999
+10  chromedriver                        0x00000001095607f9 chromedriver + 2332665
+11  chromedriver                        0x000000010956d963 chromedriver + 2386275
+12  chromedriver                        0x000000010956d45b chromedriver + 2384987
+13  chromedriver                        0x00000001095475b5 chromedriver + 2229685
+14  chromedriver                        0x000000010956e3bf chromedriver + 2388927
+15  chromedriver                        0x0000000109555c79 chromedriver + 2288761
+16  chromedriver                        0x0000000109584f69 chromedriver + 2482025
+17  chromedriver                        0x0000000109597103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Qa.Utility.DriverFactory.initLocalDriver(DriverFactory.java:112)
+	at Qa.Stepdefs.Hook.setUp(Hook.java:28)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;User able to view all the Expense List&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">
                   </a> <!-- runScenario("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at Qa.Utility.Verify.It_matches(Verify.java:8)
-	at Qa.Stepdefs.Expense.ExpensePageSteps.user_able_to_log_in_and_land_on_expense_page(ExpensePageSteps.java:24)
-	at ✽.User able to log in and land on Expense page(file:///Users/abraartishan/Desktop/TOPA_QA/CODE%20BASE/CUCUMBER_FRAME/INTELLIJ/src/main/java/Qa/Features/Expense/Expense.feature:17)
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;Mds-MacBook-Pro.local&apos;, ip: &apos;2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;12.0.1&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010c8d4909 chromedriver + 2533641
+1   chromedriver                        0x000000010cf5ed53 chromedriver + 9391443
+2   chromedriver                        0x000000010c6923c3 chromedriver + 164803
+3   chromedriver                        0x000000010c6b6566 chromedriver + 312678
+4   chromedriver                        0x000000010c6b2774 chromedriver + 296820
+5   chromedriver                        0x000000010c6af9a5 chromedriver + 285093
+6   chromedriver                        0x000000010c6e2834 chromedriver + 493620
+7   chromedriver                        0x000000010c6ddb43 chromedriver + 473923
+8   chromedriver                        0x000000010c6b8616 chromedriver + 321046
+9   chromedriver                        0x000000010c6b9587 chromedriver + 324999
+10  chromedriver                        0x000000010c8a37f9 chromedriver + 2332665
+11  chromedriver                        0x000000010c8b0963 chromedriver + 2386275
+12  chromedriver                        0x000000010c8b045b chromedriver + 2384987
+13  chromedriver                        0x000000010c88a5b5 chromedriver + 2229685
+14  chromedriver                        0x000000010c8b13bf chromedriver + 2388927
+15  chromedriver                        0x000000010c898c79 chromedriver + 2288761
+16  chromedriver                        0x000000010c8c7f69 chromedriver + 2482025
+17  chromedriver                        0x000000010c8da103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Qa.Utility.DriverFactory.initLocalDriver(DriverFactory.java:112)
+	at Qa.Stepdefs.Hook.setUp(Hook.java:28)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -163,24 +266,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-failed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Qa.CucumberRunner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User able to create new expense list&quot;, &quot;Optional[User is able to perform Expoense functionality]&quot;)">
-                  </a> <!-- runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -247,16 +332,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Qa.CucumberRunner.TestRunner')
-data.setCell(0, 3, 6585);
+data.setCell(0, 3, 2457);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Qa.CucumberRunner.TestRunner')
-data.setCell(1, 3, 4605);
+data.setCell(1, 3, 1561);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -289,45 +374,47 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextPrepareTestInstance</span>
-                <span class="method-start">10 ms</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">313 ms</span>
+                <span class="method-start">396 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void Qa.CucumberRunner.TestRunner.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.te...)</span>
-                <span class="method-start">683 ms</span>
+                <span class="method-start">801 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("User able to create new expense list", "Optional[User is able to perform Expoense functionality]")</span>
-                <span class="method-start">685 ms</span>
+                <span class="method-start">803 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void Qa.CucumberRunner.TestRunner.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.te...)</span>
-                <span class="method-start">5292 ms</span>
+                <span class="method-start">3267 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void Qa.CucumberRunner.TestRunner.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.te...)</span>
-                <span class="method-start">5293 ms</span>
+                <span class="method-start">3269 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("User able to view all the Expense List", "Optional[User is able to perform Expoense functionality]")</span>
-                <span class="method-start">5293 ms</span>
+                <span class="method-start">3269 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void Qa.CucumberRunner.TestRunner.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.te...)</span>
-                <span class="method-start">11884 ms</span>
+                <span class="method-start">4830 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">11885 ms</span>
+                <span class="method-start">4831 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">14887 ms</span>
+                <span class="method-start">6645 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

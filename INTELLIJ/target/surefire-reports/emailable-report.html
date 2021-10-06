@@ -9,21 +9,121 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">All Test Suite</th></tr>
-<tr><td><a href="#t0">Smoke Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,906</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Smoke Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">6,659</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Qa.CucumberRunner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1614632395306</td><td rowspan="1">6585</td></tr><tr><th colspan="4">Smoke Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Qa.CucumberRunner.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1614632390698</td><td rowspan="1">4605</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Qa.CucumberRunner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1633554423042</td><td rowspan="2">2457</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
 </table>
-<h2>Smoke Tests</h2><h3 id="m0">Qa.CucumberRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User able to view all the Expense List&quot;</td><td>&quot;Optional[User is able to perform Expoense functionality]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at Qa.Utility.Verify.It_matches(Verify.java:8)
-	at Qa.Stepdefs.Expense.ExpensePageSteps.user_able_to_log_in_and_land_on_expense_page(ExpensePageSteps.java:24)
-	at ✽.User able to log in and land on Expense page(file:///Users/abraartishan/Desktop/TOPA_QA/CODE%20BASE/CUCUMBER_FRAME/INTELLIJ/src/main/java/Qa/Features/Expense/Expense.feature:17)
+<h2>Smoke Tests</h2><h3 id="m0">Qa.CucumberRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User able to create new expense list&quot;</td><td>&quot;Optional[User is able to perform Expoense functionality]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;Mds-MacBook-Pro.local&apos;, ip: &apos;2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;12.0.1&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000109591909 chromedriver + 2533641
+1   chromedriver                        0x0000000109c1bd53 chromedriver + 9391443
+2   chromedriver                        0x000000010934f3c3 chromedriver + 164803
+3   chromedriver                        0x0000000109373566 chromedriver + 312678
+4   chromedriver                        0x000000010936f774 chromedriver + 296820
+5   chromedriver                        0x000000010936c9a5 chromedriver + 285093
+6   chromedriver                        0x000000010939f834 chromedriver + 493620
+7   chromedriver                        0x000000010939ab43 chromedriver + 473923
+8   chromedriver                        0x0000000109375616 chromedriver + 321046
+9   chromedriver                        0x0000000109376587 chromedriver + 324999
+10  chromedriver                        0x00000001095607f9 chromedriver + 2332665
+11  chromedriver                        0x000000010956d963 chromedriver + 2386275
+12  chromedriver                        0x000000010956d45b chromedriver + 2384987
+13  chromedriver                        0x00000001095475b5 chromedriver + 2229685
+14  chromedriver                        0x000000010956e3bf chromedriver + 2388927
+15  chromedriver                        0x0000000109555c79 chromedriver + 2288761
+16  chromedriver                        0x0000000109584f69 chromedriver + 2482025
+17  chromedriver                        0x0000000109597103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Qa.Utility.DriverFactory.initLocalDriver(DriverFactory.java:112)
+	at Qa.Stepdefs.Hook.setUp(Hook.java:28)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Qa.CucumberRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User able to create new expense list&quot;</td><td>&quot;Optional[User is able to perform Expoense functionality]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Qa.CucumberRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User able to view all the Expense List&quot;</td><td>&quot;Optional[User is able to perform Expoense functionality]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;Mds-MacBook-Pro.local&apos;, ip: &apos;2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;12.0.1&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010c8d4909 chromedriver + 2533641
+1   chromedriver                        0x000000010cf5ed53 chromedriver + 9391443
+2   chromedriver                        0x000000010c6923c3 chromedriver + 164803
+3   chromedriver                        0x000000010c6b6566 chromedriver + 312678
+4   chromedriver                        0x000000010c6b2774 chromedriver + 296820
+5   chromedriver                        0x000000010c6af9a5 chromedriver + 285093
+6   chromedriver                        0x000000010c6e2834 chromedriver + 493620
+7   chromedriver                        0x000000010c6ddb43 chromedriver + 473923
+8   chromedriver                        0x000000010c6b8616 chromedriver + 321046
+9   chromedriver                        0x000000010c6b9587 chromedriver + 324999
+10  chromedriver                        0x000000010c8a37f9 chromedriver + 2332665
+11  chromedriver                        0x000000010c8b0963 chromedriver + 2386275
+12  chromedriver                        0x000000010c8b045b chromedriver + 2384987
+13  chromedriver                        0x000000010c88a5b5 chromedriver + 2229685
+14  chromedriver                        0x000000010c8b13bf chromedriver + 2388927
+15  chromedriver                        0x000000010c898c79 chromedriver + 2288761
+16  chromedriver                        0x000000010c8c7f69 chromedriver + 2482025
+17  chromedriver                        0x000000010c8da103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Qa.Utility.DriverFactory.initLocalDriver(DriverFactory.java:112)
+	at Qa.Stepdefs.Hook.setUp(Hook.java:28)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

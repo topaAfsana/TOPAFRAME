@@ -8,7 +8,7 @@
       <class name="Qa.CucumberRunner.TestRunner">
         <methods>
           <include name="springTestContextBeforeTestClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
           <include name="springTestContextPrepareTestInstance"/>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-01T15:59:49 EST" name="All Test Suite" finished-at="2021-03-01T16:00:04 EST" duration-ms="14906">
+  <suite started-at="2021-10-06T17:07:02 EDT" name="All Test Suite" finished-at="2021-10-06T17:07:08 EDT" duration-ms="6659">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" name="runScenario" class="Qa.CucumberRunner.TestRunner"/>
+        <method signature="TestRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" name="runScenario" class="Qa.CucumberRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-03-01T15:59:49 EST" name="Smoke Tests" finished-at="2021-03-01T16:00:04 EST" duration-ms="14906">
+    <test started-at="2021-10-06T17:07:02 EDT" name="Smoke Tests" finished-at="2021-10-06T17:07:08 EDT" duration-ms="6659">
       <class name="Qa.CucumberRunner.TestRunner">
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:50 EST" name="springTestContextBeforeTestClass" finished-at="2021-03-01T15:59:50 EST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:02 EDT" name="springTestContextBeforeTestClass" finished-at="2021-10-06T17:07:02 EDT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:50 EST" name="springTestContextPrepareTestInstance" finished-at="2021-03-01T15:59:50 EST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:02 EDT" name="springTestContextPrepareTestInstance" finished-at="2021-10-06T17:07:02 EDT" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:50 EST" name="setUpClass" finished-at="2021-03-01T15:59:50 EST" duration-ms="362" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:02 EDT" name="setUpClass" finished-at="2021-10-06T17:07:03 EDT" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:50 EST" name="springTestContextBeforeTestMethod" finished-at="2021-03-01T15:59:50 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:03 EDT" name="springTestContextBeforeTestMethod" finished-at="2021-10-06T17:07:03 EDT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:50 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-01T15:59:55 EST" duration-ms="4605" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-06T17:07:05 EDT" duration-ms="2457" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -46,10 +46,98 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000109591909 chromedriver + 2533641
+1   chromedriver                        0x0000000109c1bd53 chromedriver + 9391443
+2   chromedriver                        0x000000010934f3c3 chromedriver + 164803
+3   chromedriver                        0x0000000109373566 chromedriver + 312678
+4   chromedriver                        0x000000010936f774 chromedriver + 296820
+5   chromedriver                        0x000000010936c9a5 chromedriver + 285093
+6   chromedriver                        0x000000010939f834 chromedriver + 493620
+7   chromedriver                        0x000000010939ab43 chromedriver + 473923
+8   chromedriver                        0x0000000109375616 chromedriver + 321046
+9   chromedriver                        0x0000000109376587 chromedriver + 324999
+10  chromedriver                        0x00000001095607f9 chromedriver + 2332665
+11  chromedriver                        0x000000010956d963 chromedriver + 2386275
+12  chromedriver                        0x000000010956d45b chromedriver + 2384987
+13  chromedriver                        0x00000001095475b5 chromedriver + 2229685
+14  chromedriver                        0x000000010956e3bf chromedriver + 2388927
+15  chromedriver                        0x0000000109555c79 chromedriver + 2288761
+16  chromedriver                        0x0000000109584f69 chromedriver + 2482025
+17  chromedriver                        0x0000000109597103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000109591909 chromedriver + 2533641
+1   chromedriver                        0x0000000109c1bd53 chromedriver + 9391443
+2   chromedriver                        0x000000010934f3c3 chromedriver + 164803
+3   chromedriver                        0x0000000109373566 chromedriver + 312678
+4   chromedriver                        0x000000010936f774 chromedriver + 296820
+5   chromedriver                        0x000000010936c9a5 chromedriver + 285093
+6   chromedriver                        0x000000010939f834 chromedriver + 493620
+7   chromedriver                        0x000000010939ab43 chromedriver + 473923
+8   chromedriver                        0x0000000109375616 chromedriver + 321046
+9   chromedriver                        0x0000000109376587 chromedriver + 324999
+10  chromedriver                        0x00000001095607f9 chromedriver + 2332665
+11  chromedriver                        0x000000010956d963 chromedriver + 2386275
+12  chromedriver                        0x000000010956d45b chromedriver + 2384987
+13  chromedriver                        0x00000001095475b5 chromedriver + 2229685
+14  chromedriver                        0x000000010956e3bf chromedriver + 2388927
+15  chromedriver                        0x0000000109555c79 chromedriver + 2288761
+16  chromedriver                        0x0000000109584f69 chromedriver + 2482025
+17  chromedriver                        0x0000000109597103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at Qa.Utility.DriverFactory.initLocalDriver(DriverFactory.java:112)
+at Qa.Stepdefs.Hook.setUp(Hook.java:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:55 EST" name="springTestContextAfterTestMethod" finished-at="2021-03-01T15:59:55 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:05 EDT" name="springTestContextAfterTestMethod" finished-at="2021-10-06T17:07:05 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:55 EST" name="springTestContextBeforeTestMethod" finished-at="2021-03-01T15:59:55 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:05 EDT" name="springTestContextBeforeTestMethod" finished-at="2021-10-06T17:07:05 EDT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T15:59:55 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-01T16:00:01 EST" duration-ms="6585" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-06T17:07:07 EDT" duration-ms="1561" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -84,28 +172,98 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]]]>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010c8d4909 chromedriver + 2533641
+1   chromedriver                        0x000000010cf5ed53 chromedriver + 9391443
+2   chromedriver                        0x000000010c6923c3 chromedriver + 164803
+3   chromedriver                        0x000000010c6b6566 chromedriver + 312678
+4   chromedriver                        0x000000010c6b2774 chromedriver + 296820
+5   chromedriver                        0x000000010c6af9a5 chromedriver + 285093
+6   chromedriver                        0x000000010c6e2834 chromedriver + 493620
+7   chromedriver                        0x000000010c6ddb43 chromedriver + 473923
+8   chromedriver                        0x000000010c6b8616 chromedriver + 321046
+9   chromedriver                        0x000000010c6b9587 chromedriver + 324999
+10  chromedriver                        0x000000010c8a37f9 chromedriver + 2332665
+11  chromedriver                        0x000000010c8b0963 chromedriver + 2386275
+12  chromedriver                        0x000000010c8b045b chromedriver + 2384987
+13  chromedriver                        0x000000010c88a5b5 chromedriver + 2229685
+14  chromedriver                        0x000000010c8b13bf chromedriver + 2388927
+15  chromedriver                        0x000000010c898c79 chromedriver + 2288761
+16  chromedriver                        0x000000010c8c7f69 chromedriver + 2482025
+17  chromedriver                        0x000000010c8da103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at Qa.Utility.Verify.It_matches(Verify.java:8)
-at Qa.Stepdefs.Expense.ExpensePageSteps.user_able_to_log_in_and_land_on_expense_page(ExpensePageSteps.java:24)
-at ✽.User able to log in and land on Expense page(file:///Users/abraartishan/Desktop/TOPA_QA/CODE%20BASE/CUCUMBER_FRAME/INTELLIJ/src/main/java/Qa/Features/Expense/Expense.feature:17)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010c8d4909 chromedriver + 2533641
+1   chromedriver                        0x000000010cf5ed53 chromedriver + 9391443
+2   chromedriver                        0x000000010c6923c3 chromedriver + 164803
+3   chromedriver                        0x000000010c6b6566 chromedriver + 312678
+4   chromedriver                        0x000000010c6b2774 chromedriver + 296820
+5   chromedriver                        0x000000010c6af9a5 chromedriver + 285093
+6   chromedriver                        0x000000010c6e2834 chromedriver + 493620
+7   chromedriver                        0x000000010c6ddb43 chromedriver + 473923
+8   chromedriver                        0x000000010c6b8616 chromedriver + 321046
+9   chromedriver                        0x000000010c6b9587 chromedriver + 324999
+10  chromedriver                        0x000000010c8a37f9 chromedriver + 2332665
+11  chromedriver                        0x000000010c8b0963 chromedriver + 2386275
+12  chromedriver                        0x000000010c8b045b chromedriver + 2384987
+13  chromedriver                        0x000000010c88a5b5 chromedriver + 2229685
+14  chromedriver                        0x000000010c8b13bf chromedriver + 2388927
+15  chromedriver                        0x000000010c898c79 chromedriver + 2288761
+16  chromedriver                        0x000000010c8c7f69 chromedriver + 2482025
+17  chromedriver                        0x000000010c8da103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at Qa.Utility.DriverFactory.initLocalDriver(DriverFactory.java:112)
+at Qa.Stepdefs.Hook.setUp(Hook.java:28)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T16:00:01 EST" name="springTestContextAfterTestMethod" finished-at="2021-03-01T16:00:01 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:07 EDT" name="springTestContextAfterTestMethod" finished-at="2021-10-06T17:07:07 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,11 +274,11 @@ at ✽.User able to log in and land on Expense page(file:///Users/abraartishan/D
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T16:00:01 EST" name="tearDownClass" finished-at="2021-03-01T16:00:04 EST" duration-ms="3002" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:07 EDT" name="tearDownClass" finished-at="2021-10-06T17:07:08 EDT" duration-ms="1814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@19976a65]" started-at="2021-03-01T16:00:04 EST" name="springTestContextAfterTestClass" finished-at="2021-03-01T16:00:04 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:Qa.CucumberRunner.TestRunner@4b2c5e02]" started-at="2021-10-06T17:07:08 EDT" name="springTestContextAfterTestClass" finished-at="2021-10-06T17:07:08 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->

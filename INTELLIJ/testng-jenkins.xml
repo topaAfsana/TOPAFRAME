@@ -12,5 +12,6 @@
     </test>
 </suite>
 
-
+<!--        source ~/.bash_profile - To Run MVN from Terminal -->
 <!--        mvn clean test -Dtestng.dtd.http=true -Dtest.platform=mac -Dtest.browser=chrome-->
+

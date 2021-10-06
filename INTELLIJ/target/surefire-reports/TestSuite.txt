@@ -1,7 +1,62 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.863 s <<< FAILURE! - in TestSuite
-Qa.CucumberRunner.TestRunner.runScenario  Time elapsed: 6.592 s  <<< FAILURE!
-java.lang.AssertionError: expected [BUDGET EXPLORER-EXPENSE CHECK] but found [BUDGET EXPLORER-EXPENSE CHECK1]
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.54 s <<< FAILURE! - in TestSuite
+Qa.CucumberRunner.TestRunner.runScenario  Time elapsed: 2.527 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000109591909 chromedriver + 2533641
+1   chromedriver                        0x0000000109c1bd53 chromedriver + 9391443
+2   chromedriver                        0x000000010934f3c3 chromedriver + 164803
+3   chromedriver                        0x0000000109373566 chromedriver + 312678
+4   chromedriver                        0x000000010936f774 chromedriver + 296820
+5   chromedriver                        0x000000010936c9a5 chromedriver + 285093
+6   chromedriver                        0x000000010939f834 chromedriver + 493620
+7   chromedriver                        0x000000010939ab43 chromedriver + 473923
+8   chromedriver                        0x0000000109375616 chromedriver + 321046
+9   chromedriver                        0x0000000109376587 chromedriver + 324999
+10  chromedriver                        0x00000001095607f9 chromedriver + 2332665
+11  chromedriver                        0x000000010956d963 chromedriver + 2386275
+12  chromedriver                        0x000000010956d45b chromedriver + 2384987
+13  chromedriver                        0x00000001095475b5 chromedriver + 2229685
+14  chromedriver                        0x000000010956e3bf chromedriver + 2388927
+15  chromedriver                        0x0000000109555c79 chromedriver + 2288761
+16  chromedriver                        0x0000000109584f69 chromedriver + 2482025
+17  chromedriver                        0x0000000109597103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
+
+Qa.CucumberRunner.TestRunner.runScenario  Time elapsed: 1.501 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 94.0.4606.71 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010c8d4909 chromedriver + 2533641
+1   chromedriver                        0x000000010cf5ed53 chromedriver + 9391443
+2   chromedriver                        0x000000010c6923c3 chromedriver + 164803
+3   chromedriver                        0x000000010c6b6566 chromedriver + 312678
+4   chromedriver                        0x000000010c6b2774 chromedriver + 296820
+5   chromedriver                        0x000000010c6af9a5 chromedriver + 285093
+6   chromedriver                        0x000000010c6e2834 chromedriver + 493620
+7   chromedriver                        0x000000010c6ddb43 chromedriver + 473923
+8   chromedriver                        0x000000010c6b8616 chromedriver + 321046
+9   chromedriver                        0x000000010c6b9587 chromedriver + 324999
+10  chromedriver                        0x000000010c8a37f9 chromedriver + 2332665
+11  chromedriver                        0x000000010c8b0963 chromedriver + 2386275
+12  chromedriver                        0x000000010c8b045b chromedriver + 2384987
+13  chromedriver                        0x000000010c88a5b5 chromedriver + 2229685
+14  chromedriver                        0x000000010c8b13bf chromedriver + 2388927
+15  chromedriver                        0x000000010c898c79 chromedriver + 2288761
+16  chromedriver                        0x000000010c8c7f69 chromedriver + 2482025
+17  chromedriver                        0x000000010c8da103 chromedriver + 2556163
+18  libsystem_pthread.dylib             0x00007fff204dd8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff204d9443 thread_start + 15
+
 
