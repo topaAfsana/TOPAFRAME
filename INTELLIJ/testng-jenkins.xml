@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Smoke Tests" parallel = "methods">
-
         <parameter name = "platform" value="${test.platform}"/>
         <parameter name = "browser" value="${test.browser}"/>
+        <!--        mvn clean test -Dtestng.dtd.http=true -Dtest.platform=mac -Dtest.browser=chrome-->
         <classes>
             <class name="Qa.CucumberRunner.TestRunner"></class>
         </classes>
@@ -12,6 +12,22 @@
     </test>
 </suite>
 
+
+
+<!--NOTE:-->
+<!--TO USE COMMAND LINE AND MVN TOOL TO RUN TESTNG XML YOU MUST ADD SUREFIRE PLUG IN AND PUT THE XML FILE IN IT,OTHERWISE THE TEST WONT RUN-->
+
+<!--OPEN TERMINAL-->
+<!--GO TO PROJECT FOLDER-->
+<!--RUN COMMANDS-->
 <!--        source ~/.bash_profile - To Run MVN from Terminal -->
+<!--BASIC COMMAND-->
+        <!--mvn test-->
+<!--DEPENDING ON CONFIGURATION-->
+        <!--        <parameter name = "platform" value="mac"/>-->
+        <!--        <parameter name = "browser" value="chrome"/>-->
+        <!--        mvn clean test -Dtestng.dtd.http=true -->
+<!--FOR JENKINS CONFIG-->
+<!--        AND CURRENT CONFIG SO RUN THIS COMAND LOCALLY OR JENKINS-->
 <!--        mvn clean test -Dtestng.dtd.http=true -Dtest.platform=mac -Dtest.browser=chrome-->
 
