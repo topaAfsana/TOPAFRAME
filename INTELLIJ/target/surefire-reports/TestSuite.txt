@@ -1,24 +1,62 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.728 s <<< FAILURE! - in TestSuite
-Qa.CucumberRunner.TestRunner.runScenario  Time elapsed: 2.87 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=94.0.4606.81)
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.266 s <<< FAILURE! - in TestSuite
+Qa.CucumberRunner.TestRunner.runScenario  Time elapsed: 2.497 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 93
+Current browser version is 95.0.4638.69 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
 System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /var/folders/31/4kb7bqvd0q5...}, goog:chromeOptions: {debuggerAddress: localhost:59835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ebe41fa068740055579c03aa05dd68ba
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010ec536d9 chromedriver + 2758361
+1   chromedriver                        0x000000010f306893 chromedriver + 9783443
+2   chromedriver                        0x000000010e9dead8 chromedriver + 183000
+3   chromedriver                        0x000000010ea047e5 chromedriver + 337893
+4   chromedriver                        0x000000010ea00403 chromedriver + 320515
+5   chromedriver                        0x000000010e9fcb16 chromedriver + 305942
+6   chromedriver                        0x000000010ea35a82 chromedriver + 539266
+7   chromedriver                        0x000000010ea2fd43 chromedriver + 515395
+8   chromedriver                        0x000000010ea06a0e chromedriver + 346638
+9   chromedriver                        0x000000010ea07c75 chromedriver + 351349
+10  chromedriver                        0x000000010ec1a1df chromedriver + 2523615
+11  chromedriver                        0x000000010ec2c9f2 chromedriver + 2599410
+12  chromedriver                        0x000000010ebff02b chromedriver + 2412587
+13  chromedriver                        0x000000010ec2de1a chromedriver + 2604570
+14  chromedriver                        0x000000010ec0f96c chromedriver + 2480492
+15  chromedriver                        0x000000010ec47d38 chromedriver + 2710840
+16  chromedriver                        0x000000010ec47ec1 chromedriver + 2711233
+17  chromedriver                        0x000000010ec586f8 chromedriver + 2778872
+18  libsystem_pthread.dylib             0x00007ff813eda514 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff813ed602f thread_start + 15
 
-Qa.CucumberRunner.TestRunner.runScenario  Time elapsed: 1.688 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=94.0.4606.81)
+
+Qa.CucumberRunner.TestRunner.runScenario  Time elapsed: 1.532 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 93
+Current browser version is 95.0.4638.69 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
 System info: host: 'Mds-MacBook-Pro.local', ip: '2601:140:8b00:4090:3af9:d3ff:feb4:59c4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /var/folders/31/4kb7bqvd0q5...}, goog:chromeOptions: {debuggerAddress: localhost:59845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a0ccb6573a60cf4cb725a642ff22c8d
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d0e36d9 chromedriver + 2758361
+1   chromedriver                        0x000000010d796893 chromedriver + 9783443
+2   chromedriver                        0x000000010ce6ead8 chromedriver + 183000
+3   chromedriver                        0x000000010ce947e5 chromedriver + 337893
+4   chromedriver                        0x000000010ce90403 chromedriver + 320515
+5   chromedriver                        0x000000010ce8cb16 chromedriver + 305942
+6   chromedriver                        0x000000010cec5a82 chromedriver + 539266
+7   chromedriver                        0x000000010cebfd43 chromedriver + 515395
+8   chromedriver                        0x000000010ce96a0e chromedriver + 346638
+9   chromedriver                        0x000000010ce97c75 chromedriver + 351349
+10  chromedriver                        0x000000010d0aa1df chromedriver + 2523615
+11  chromedriver                        0x000000010d0bc9f2 chromedriver + 2599410
+12  chromedriver                        0x000000010d08f02b chromedriver + 2412587
+13  chromedriver                        0x000000010d0bde1a chromedriver + 2604570
+14  chromedriver                        0x000000010d09f96c chromedriver + 2480492
+15  chromedriver                        0x000000010d0d7d38 chromedriver + 2710840
+16  chromedriver                        0x000000010d0d7ec1 chromedriver + 2711233
+17  chromedriver                        0x000000010d0e86f8 chromedriver + 2778872
+18  libsystem_pthread.dylib             0x00007ff813eda514 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff813ed602f thread_start + 15
+
 

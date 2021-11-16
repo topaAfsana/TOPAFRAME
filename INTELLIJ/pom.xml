@@ -121,7 +121,6 @@
                 <target>1.8</target>
             </configuration>
         </plugin>
-
     </plugins>
 </build>
 
